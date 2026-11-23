@@ -1,0 +1,59 @@
+
+
+
+大模型应用开发
+langchain
+    简化大语言模型开发的过程
+    包含   开发阶段   生产阶段  部署
+    核心组件
+        模型
+            大语言模型   聊天模型    文本生成模型  提示词模版    提示词模版
+        链
+            核心的语法机制   链式调用
+        数据增强
+            rag   搭建知识库   切片   向量化  向量数据库  检索器(分装了查询的方法, 查询会跟方便  )
+        回调
+            请求成功之后(调用某一个方法)
+        记忆
+            大模型不存在记忆
+        agent
+            智能体   贾维斯
+
+    带三方组件   开源
+        langchain-core     基础的抽象类   表达语言
+        langchain-community    第三方集成    合作伙伴     langchain-openai    langchain-community.llms.Tongyi
+            langchain-core基础之上进行开发
+        langchain   提供可应用程序
+        langgraph   图结构   状态管理
+        langserver  部署  成api接口
+        langsmith   实现监控  调试节点  进行评估
+
+
+
+
+
+
+向量数据库
+    chroma sqlite3
+    faiss
+        pkl   存序列文件   存源文档
+        faiss   存向量文件   存向量  二进制文件
+
+
+
+向量模型
+    向量模型直接会有区别
+        维度
+        模型加载的批次大小
+
+
+
+langchain实现问题
+    1. 检索的内容 怎么替换的
+    2. 问题向量化
+
+    执行流程  通过检索器  检索内容   把内容替换到提示词模版中  在调用大模型发送请求
+
+
+
+提示词工程岗位
